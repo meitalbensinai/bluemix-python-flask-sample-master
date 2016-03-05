@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Erubescent 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20131115
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html" class="about_html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Like2Drops</title>
+<meta name="keywords" content="" />
+<meta name="description" content="Like2Drops" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="../static/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../static/fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body class="about_body">
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1>Like2Drops</h1>
+			<div id="menu">
+			<ul>
+				<li><a href="/" accesskey="1" title="">Homepage</a></li>
+				<li><a href="about" accesskey="2" title="">Explanations</a></li>
+                <li><a href="http://www.cs.technion.ac.il/~mbs/" accesskey="3" title="">About Me</a></li>
+                <li class="current_page_item"><a href="download"  accesskey="4" title="">Download Data</a></li>
+
+			</ul>
+		</div>
+		</div>
+	</div>
+</div>
+<div id="header-featured"> </div>
+<div id="banner-wrapper" style="background: #FFF;">
+	<div id="banner" class="small_container">
+		<h1>Similarity of code fragments Dataset</h1>
+        </br>
+        <form action="" method="post" name="download">
+	    <!--table align="center">
+		<tr>
+				<th><h3>Name</h3></th>
+				<th><input type="text" name="name"/></th>
+		</tr>
+        <tr>
+				<th><h3>Institution</h3></th>
+				<th><input type="text" name="inst"/></th>
+		</tr>
+        <tr>
+				<th><h3>Email</h3></th>
+				<th><input type="text" name="mail"/></th>
+		</tr>
+
+        </table-->
+            </br>
+            <h3>This data was collected during our research.</h3>
+<h3>The research focus is to measure similarity between code fragments using natural language meta data that is associated with the code.</h3>
+<h3>Further details can be found at my <a href="http://cs.technion.ac.il/users/wwwb/cgi-bin/tr-info.cgi/2015/MSC/MSC-2015-16" style="color: #660033">MSC dissertation</a> </h3>
+
+<h3>This zip contains 3 different collections:</h3>
+            </br>
+            <table align="center">
+                <tr>
+                    <th valign="top">
+                        <div>
+                     	<p style="text-align: left; color: #000000; font-weight: bold; font-size: large">pairs_with_user_scores.json </p>
+                <p style="text-align: left; color: #000000; font-weight: normal">this collection is in the following structure:</p>
+                    <p style="padding-left:20px; text-align: left; color: #000000; font-weight: normal">
+					-pair_id </br>
+					-code1: first code </br>
+					-code2: second code </br>
+					-grades: list of all the grades that the users gave to this pair. </p>
+						<p style="padding-left:40px; text-align: left; color: #000000; font-weight: normal">
+
+						 map - </br>
+						 "Very similar": 5, </br>
+						 "Pretty similar": 4, </br>
+						 "Related, but not similar": 3, </br>
+						 "Pretty different": 2, </br>
+						 "Totally different": 1 </p>
+                <p style="padding-left:20px; text-align: left; color: #000000; font-weight: normal">
+				-lang1: the language of the first code </br>
+				-lang2: the language of the second code </p>
+                        </div>
+                    </th>
+                    <th style="width: 20px"></th>
+                    <th valign="top">
+                        <div>
+                            <p style="text-align: left; color: #000000; font-weight: bold; font-size: large">pairs_with_our_score.json</p>
+                			<p style="text-align: left; color: #000000; font-weight: normal">this collection is in the following structure:</p>
+							<p style="padding-left:20px; text-align: left; color: #000000; font-weight: normal">
+					-pair_id</br>
+					-score: our similarity score</br>
+					-similarity: our decision - similar or not</p>
+                        </div>
+                    </th>
+                    <th style="width: 20px"></th>
+                    <th valign="top">
+                        <div>
+                            <p style="text-align: left; color: #000000; font-weight: bold; font-size: large;">pairs_with_metadata.json</p>
+                			<p style="text-align: left; color: #000000; font-weight: normal">this collection is in the following structure:</p>
+                			<p style="padding-left:20px; text-align: left; color: #000000; font-weight: normal">
+								-pair_id</br>
+								-code1: first code</br>
+								-code2: second code</br>
+								-lang1: the language of the first code</br>
+								-lang2: the language of the second code</br>
+								-title1: the most informative text regarding code1</br>
+								-title2: the most informative text regarding code2</br>
+								-text1: some other text that is associated with code1</br>
+								-text2: some other text that is associated with code2</p>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+<h3>Enjoy and let us know if you make any use of our data.</h3>
+<h3>Best,</h3>
+<h3>Meital Zilberstein & Eran Yahav</h3>
+<h3>mbs/yahave@cs.technion.ac.il</h3>
+            </br>
+            <input type="submit" name="btn" value="Download" class="button1"/>
+
+		</form>
+            </br>
+
+        <h3 style="visibility: {{ thanks }}">{{ text }}</h3>
+
+	</div>
+</div>
+
+</br>
+</br>
+<div id="copyright" class="container">
+	<p>&copy; Like2drops. All rights reserved | Meital Ben Sinai |</p>
+    <p style = "font-size: 9pt">This project is supported by the European Union's - Seventh Framework Programme (FP7) under grant agreement n° 615688 – ERC- COG-PRIME. | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<html style="display: table; margin: auto;">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>Like two drops of water?!</title>
+    </head>
+    <body bgcolor="#FFF7F7" style="max-width:100%,  display: table-cell; horizontal-align: middle;vertical-align: middle;">
+        <!--<h1 style="font-size: 60pt;text-align:center;font-family: Cursive">Like two drops of water?!</h1>-->
+        <center><img src="http://s27.postimg.org/tvb3aqxo3/title_img.png" alt="Like two drops of water?!"></center>
+        <h2 style="text-align:center; font-family: Tw Cen MT;">Help me to decide whether two code snippets are similar :)</h2>
+        <form action="" method="post" name="next" style="text-align:center">
+        <p><input style="text-align:center;align:center; font-family: Tw Cen MT;font-weight:bold;margin: auto; font-size: 20pt; border: none; color: #d22593;background: none;"  type="submit" name="btn" value="About page"></p>
+        </form>
+        <form action="" method="post" name="next" style="text-align:center">
+             <input type="hidden" name="pair_id" value="{{pair_id}}">
+        </form>
+        <table align="center" style="width; 100%;">
+            <tr>
+                <th valign="top"><pre style="text-align:left; width:600px;word-wrap: break-word;border-style: solid; border-width: 3px; min-height: 100px; padding: 10px; background: rgba(255, 255, 255, 0.4);max-width: 600px"><code>{{code1}}</code></pre></th>
+                <td></td>
+                <th valign="top"><pre style="text-align:left; width:600px;word-wrap: break-word;border-style: solid; border-width: 3px; min-height: 100px; padding: 10px; background: rgba(255, 255, 255, 0.4);max-width: 600px"><code>{{code2}}</code></pre></th>
+            </tr>
+            <tr>
+                <th valign="center">
+                    <p style="font-family: Tw Cen MT;font-weight:normal;font-size: 20pt;width:100%;">language: {{lang1}}</p>
+                </th>
+                <td><p style="width: 60px"></td>
+                <th valign="center">
+                    <p style="font-family: Tw Cen MT;font-weight:normal; font-size: 20pt;width:100%">language: {{lang2}}</p>
+                </th>
+            </tr>
+        </table>
+        </div>
+        <h3 style="text-align:center; font-family: Tw Cen MT; font-size: 20pt;">Current helping status: {{counter}} pairs!</h3>
+        <table align="center" cellpadding="10">
+        <form action="" method="post" name="decision" style="text-align:center"><table align="center" style="border-spacing: 10px 7px;">
+                <tr>
+                   <th><p><input type="submit" name="btn" value="I don't
+know" style="width: 90px; height: 50px; border-radius: 50%;"></p></th>
+                    <th><td style="border-left: 2px dashed #FF0099; padding: 5px;"></td></th>
+                    <th><input type="submit" name="btn" value="Totally
+different" style="width: 90px; height: 50px; border-radius: 50%;"></th>
+                     <th><input type="submit" name="btn" value="Pretty
+different" style="width: 90px; height: 50px; border-radius: 50%"></th>
+                    <th><p><input type="submit" name="btn" value="Related, but
+not similar" style="text-shadow : 0 0 0.5px rgb(255,0,96) ; width: 90px; height: 50px; border-radius: 50%; "></p></th>
+                     <th><input type="submit" name="btn" value="Pretty
+similar" style="width: 90px; height: 50px; border-radius: 50%"></th>
+                     <th><input type="submit" name="btn" value="Very
+similar" style="width: 90px; height: 50px; border-radius: 50%"></th>
+                </tr>
+            </table>
+            </br>
+                <input type="hidden" name="pair_id" value="{{pair_id}}">
+        </form>
+        <h3 style="font-size: 18pt; background-color:#ffcccc; border-radius: 40%; border-style:dashed ; padding: 25px; border-color:#d22593; text-align:center;align:center; font-family: Tw Cen MT;font-weight:normal;width:70%;margin: auto;">The similarity level is dependent on the aim of the code, two code snippets are considered similar if they solve the same problem (even if the parameter values are different). Moreover, printing and logging shouldn't be taken into account.</h3>
+        <p style="font-family: Tw Cen MT;font-weight:normal; align:left;font-size: 14pt;">disclaimer: the site is best displayed with Chorme browser</p>
+        <!--<p style="font-family: Tw Cen MT;font-weight:normal; align:left;font-size: 8pt;">{{score}}</p>-->
+
+    </body>
+</html>

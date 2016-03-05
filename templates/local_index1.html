@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html style="display: table; margin: auto;">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>Like two drops of water?!</title>
+    </head>
+    <body bgcolor="#FFF7F7" style="max-width:100%,  display: table-cell; horizontal-align: middle;vertical-align: middle;">
+        <!--<h1 style="font-size: 60pt;text-align:center;font-family: Cursive">Like two drops of water?!</h1>-->
+        <!--<center><img src="http://s27.postimg.org/tvb3aqxo3/title_img.png" alt="Like two drops of water?!"></center>
+        <h2 style="text-align:center; font-family: Tw Cen MT;">Help me to decide whether two code snippets are similar :)</h2>
+        <form action="" method="post" name="next" style="text-align:center">
+        <p><input style="text-align:center;align:center; font-family: Tw Cen MT;font-weight:bold;margin: auto; font-size: 20pt; border: none; color: #d22593;background: none;"  type="submit" name="btn" value="About page"></p>
+        </form>
+        <form action="" method="post" name="next" style="text-align:center">
+             <table align="center" cellpadding="10">
+                <tr>
+                    <th><p><input type="submit" name="btn" value="I don't
+know" style="width: 90px; height: 50px; border-radius: 50%;"></p></th>
+                    <th><p><input type="submit" name="btn" value="Report
+error" style="width: 90px; height: 50px; border-radius: 50%;"></p></th>
+                 </tr>
+             </table>
+             <input type="hidden" name="pair_id" value="{{pair_id}}">
+        </form>-->
+        <br/>
+        <br/>
+        <form action="" method="post" name="dec" style="text-align:center">
+            <table align="center" cellpadding="10">
+                <tr>
+                    <th><input type="submit" name="btn" value="Very
+similar" style="width: 90px; height: 50px; border-radius: 50%"></th>
+                    <th><input type="submit" name="btn" value="Pretty
+similar" style="width: 90px; height: 50px; border-radius: 50%"></th>
+                    <th><input type="submit" name="btn" value="Comme ci
+comme ca" style="width: 90px; height: 50px; border-radius: 50%"></th>
+                    <th><input type="submit" name="btn" value="Pretty
+different" style="width: 90px; height: 50px; border-radius: 50%"></th>
+                    <th><input type="submit" name="btn" value="Totally
+different" style="width: 90px; height: 50px; border-radius: 50%;"></th>
+                </tr>
+            </table>
+            <input type="text" style="width: 50px; text-align: center" name="pair_id" value="{{pair_id}}">
+        </form>
+        <h3 style="text-align:center; font-family: Tw Cen MT;">Type: {{type}}</h3>
+        <table align="center" style="width; 100%;">
+            <!--<tr>
+                <th valign="center">
+                    <p style="font-weight:bold; font-family: Cursive;font-size: 30pt;width:100%;">#1Code</p>
+                </th>
+                <td><p style="width: 60px"></td>
+                <th valign="center">
+                    <p style="font-weight:bold; font-family: Cursive;font-size: 30pt;width:100%">#2Code</p>
+                </th>
+            </tr>-->
+            <tr>
+                <th valign="top"><pre style="text-align:left; width:600px;word-wrap: break-word;border-style: solid; border-width: 3px; min-height: 100px; padding: 10px; background: rgba(255, 255, 255, 0.4);max-width: 600px"><code>{{code1}}</code></pre></th>
+                <td></td>
+                <th valign="top"><pre style="text-align:left; width:600px;word-wrap: break-word;border-style: solid; border-width: 3px; min-height: 100px; padding: 10px; background: rgba(255, 255, 255, 0.4);max-width: 600px"><code>{{code2}}</code></pre></th>
+            </tr>
+            <tr>
+                <th valign="center">
+                    <p style="font-weight:bold; font-family: Cursive;font-size: 16pt;width:600px;">{{title1}}</p>
+                </th>
+                <td><p style="width: 60px"></td>
+                <th valign="center">
+                    <p style="font-weight:bold; font-family: Cursive;font-size: 16pt;width:600px">{{title2}}</p>
+                </th>
+            </tr>
+            <tr>
+                <th valign="top"><pre style="text-align:left; width:600px;word-wrap: break-word;border-style: solid; border-width: 3px; min-height: 100px; padding: 10px; background: rgba(255, 255, 255, 0.4);max-width: 600px"><code>{{question1}}</code></pre></th>
+                <td></td>
+                <th valign="top"><pre style="text-align:left; width:600px;word-wrap: break-word;border-style: solid; border-width: 3px; min-height: 100px; padding: 10px; background: rgba(255, 255, 255, 0.4);max-width: 600px"><code>{{question2}}</code></pre></th>
+            </tr>
+            <tr>
+                <th valign="center">
+                    <p style="font-family: Tw Cen MT;font-weight:normal;font-size: 20pt;width:100%;">types: {{type1}}</p>
+                </th>
+                <td><p style="width: 60px"></td>
+                <th valign="center">
+                    <p style="font-family: Tw Cen MT;font-weight:normal; font-size: 20pt;width:100%">types: {{type2}}</p>
+                </th>
+            </tr>
+            <tr>
+                <th valign="center">
+                    <p style="font-family: Tw Cen MT;font-weight:normal;font-size: 20pt;width:100%;">tags: {{tags1}}</p>
+                </th>
+                <td><p style="width: 60px"></td>
+                <th valign="center">
+                    <p style="font-family: Tw Cen MT;font-weight:normal; font-size: 20pt;width:100%">tags: {{tags2}}</p>
+                </th>
+            </tr>
+            <tr>
+                <th valign="center">
+                    <p style="font-family: Tw Cen MT;font-weight:normal;font-size: 20pt;width:100%;">language: {{lang1}}</p>
+                </th>
+                <td><p style="width: 60px"></td>
+                <th valign="center">
+                    <p style="font-family: Tw Cen MT;font-weight:normal; font-size: 20pt;width:100%">language: {{lang2}}</p>
+                </th>
+            </tr>
+        </table>
+        </div>
+        <!--<h2 style="text-align:center; font-family: Tw Cen MT;">Current helping status: {{counter}} pairs!</h2>
+        <br/>
+        <br/>
+        <form action="" method="post" name="decision" style="text-align:center">
+            <table align="center" cellpadding="10">
+                <tr>
+                    <th><input type="submit" name="btn" value="Very
+similar" style="width: 90px; height: 50px; border-radius: 50%"></th>
+                    <th><input type="submit" name="btn" value="Pretty
+similar" style="width: 90px; height: 50px; border-radius: 50%"></th>
+                    <th><input type="submit" name="btn" value="Comme ci
+comme ca" style="width: 90px; height: 50px; border-radius: 50%"></th>
+                    <th><input type="submit" name="btn" value="Pretty
+different" style="width: 90px; height: 50px; border-radius: 50%"></th>
+                    <th><input type="submit" name="btn" value="Totally
+different" style="width: 90px; height: 50px; border-radius: 50%;"></th>
+                </tr>
+            </table>
+                <input type="hidden" name="pair_id" value="{{pair_id}}">
+        </form>
+        <h3 style="text-align:center;align:center; font-family: Tw Cen MT;font-weight:normal;width:50%;margin: auto">The similarity level is dependent on the aim of the code, two code snippets are considered similar if they solve the same problem (even if the parameter values are different). Moreover, printing and logging shouldn't taken into account.</h3>
+        <p style="font-family: Tw Cen MT;font-weight:normal; align:left;font-size: 14pt;">disclaimer: the site is best displayed with Chorme browser</p>
+-->        <p style="font-family: Tw Cen MT;font-weight:normal; align:left;font-size: 8pt;">{{score}}</p>
+
+    </body>
+</html>
